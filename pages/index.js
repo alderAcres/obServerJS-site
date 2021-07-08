@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import Layout from '../components/Layout'
-import { Card, Icon, Button, Header } from 'semantic-ui-react'
+import { Card, Icon, Button, Header, Container } from 'semantic-ui-react'
 import Image from 'next/image';
+import Description from '../components/Description';
+import Feature from '../components/Feature'
 export default function Home() {
   return (
     <Layout>
@@ -17,8 +19,13 @@ export default function Home() {
      <Image style={{zIndex:'2'}} src='/comp.png' alt='computer image' height='360vh' width='360vw' />
       </div>
       <div style={{marginTop: '30rem', color: 'white', width:'100%', backgroundColor: 'white'}}>
-      HERE
       </div>
+      <Container>
+      <Description/>
+      </Container>
+      <Container style={{marginTop:'24rem'}}>
+        <Feature/>
+      </Container>
     </Layout>
   )
 }
