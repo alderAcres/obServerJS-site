@@ -6,7 +6,7 @@ const Layout = (props) => {
   return (
     <Container>
       <Head>
-      <title>ObServer.JS</title>
+      <title>ObServerJS</title>
       <link
         rel="stylesheet"
         href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.12/semantic.min.css"
