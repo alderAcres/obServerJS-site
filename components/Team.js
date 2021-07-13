@@ -1,46 +1,52 @@
 import React from 'react';
-import {Container, Grid} from 'semantic-ui-react';
+import {Row, Col, Container} from 'react-bootstrap';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons'
 
 const Team = () => {
   return (
     <div className="container">
-        <h1 style={{marginTop:'20vh', textAlign:'center', marginBottom:'14vh'}}>Contributers</h1>
+        <h1 style={{marginTop:'20vh', textDecoration:'underline', textAlign:'center', marginBottom:'10vh'}}>Contributers</h1>
         <div>
-      <Grid style={{textAlign:'center'}}>
-      <Grid.Row>
-      <Grid.Column width={4}>
-     <Container>
-      <h3>Julia Collins</h3>
+      <Container style={{textAlign:'center'}}>
+      <Row>
+      <Col width={5} style={{margin:'5vh 0'}}>
+      <h2 style={{marginBottom:'4vh'}}>Julia Collins</h2>
       <Image style= {{borderRadius: '50px'}} src={'/julia.png'} width='180vw' height='180vh' />
       <span>
-      <iframe style={{marginLeft:'2vw', marginTop:'2vh'}} src="https://ghbtns.com/github-btn.html?user=alderAcres&type=follow&size=large" frameborder="0" scrolling="0" width="230" height="30" title="GitHub"></iframe>
-      <a target="_blank" href={'https://www.linkedin.com/in/julia-collins-0658a6141/'}><FontAwesomeIcon style={{height:'6vh', width:'auto', margin:'0 2vw'}} icon={faLinkedin}/></a>
+      <Row style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
+        <a style={{color:'#333333', margin:'2vh 1vw'}} target="_blank" href={'https://www.linkedin.com/in/julia-collins-0658a6141/'}><FontAwesomeIcon style={{height:'4vh', width:'auto'}} icon={faLinkedinIn}/></a>
+        <a style={{color:'#333333', margin:'2vh 1vw'}}  target="_blank" href={'https://github.com/alderAcres'}><FontAwesomeIcon style={{height:'4vh', width:'auto'}} icon={faGithub}/></a>
+      </Row>
       </span>
-      </Container>
-      </Grid.Column>
-      <Grid.Column width={4}>
-      <h3>Ashley Pean</h3>
+      </Col>
+      <Col width={5} style={{margin:'5vh 0'}}>
+      <h2 style={{marginBottom:'4vh'}}>Ashley Pean</h2>
       <Image style= {{borderRadius: '50px'}} src={'/ashley.png'} width='180vw' height='180vh' />
-     <iframe style={{marginLeft:'2vw', marginTop:'2vh'}} src="https://ghbtns.com/github-btn.html?user=ashleypean&type=follow&size=large" frameborder="0" scrolling="0" width="230" height="30" title="GitHub"></iframe>
-     <a target="_blank" href={'https://www.linkedin.com/in/ashley-pean/'}><FontAwesomeIcon style={{height:'6vh', width:'auto', margin:'0 2vw'}} icon={faLinkedin}/></a>
-      </Grid.Column>
-      <Grid.Column width={4}>
-      <h3>Eric Wilding</h3>
-      <Image style= {{borderRadius: '50px'}} src={'/eric.png'} width='180vw' height='180vh' />
-      <iframe style={{marginLeft:'2vw', marginTop:'2vh'}} src="https://ghbtns.com/github-btn.html?user=e-wilding&type=follow&size=large" frameborder="0" scrolling="0" width="230" height="30" title="GitHub"></iframe>
-      <a target="_blank" href={'https://www.linkedin.com/in/eric-wilding/'}><FontAwesomeIcon style={{height:'6vh', width:'auto', margin:'0 2vw'}} icon={faLinkedin}/></a>
-      </Grid.Column>
-      <Grid.Column width={4}>
-      <h3>Josh Roberts</h3>
+      <Row style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
+     <a style={{color:'#333333', margin:'2vh 1vw'}}  target="_blank" href={'https://www.linkedin.com/in/ashley-pean/'}><FontAwesomeIcon style={{height:'4vh', width:'auto'}} icon={faLinkedinIn}/></a>
+     <a style={{color:'#333333', margin:'2vh 1vw'}}  target="_blank" href={'https://github.com/ashleypean'}><FontAwesomeIcon style={{height:'4vh', width:'auto'}} icon={faGithub}/></a>
+     </Row>
+     </Col>
+      <Col width={5} style={{margin:'5vh 0'}}>
+      <h2 style={{marginBottom:'4vh'}}>Eric Wilding</h2>
+      <Image style={{borderRadius: '50px'}} src={'/eric.png'} width='180vw' height='180vh' />
+      <Row style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
+      <a style={{color:'#333333', margin:'2vh 1vw'}}  target="_blank" href={'https://www.linkedin.com/in/eric-wilding/'}><FontAwesomeIcon style={{height:'4vh', width:'auto'}} icon={faLinkedinIn}/></a>
+      <a style={{color:'#333333', margin:'2vh 1vw'}}  target="_blank" href={'https://github.com/e-wilding'}><FontAwesomeIcon style={{height:'4vh', width:'auto'}} icon={faGithub}/></a>
+      </Row>     
+      </Col>
+      <Col width={5} style={{margin:'5vh 0'}}>
+      <h2 style={{marginBottom:'4vh'}}>Josh Roberts</h2>
       <Image style= {{borderRadius: '50px'}} src={'/josh.png'} width='180vw' height='180vh' />
-      <iframe style={{marginLeft:'1vw', marginTop:'2vh'}} src="https://ghbtns.com/github-btn.html?user=quantumspot&type=follow&size=large" frameborder="0" scrolling="0" width="230" height="30" title="GitHub"></iframe>
-      <a target="_blank" href={'https://www.linkedin.com/in/joshrobertsv2/'}><FontAwesomeIcon style={{height:'6vh', width:'auto', margin:'0 2vw'}} icon={faLinkedin}/></a>
-      </Grid.Column>
-      </Grid.Row>
-      </Grid>
+      <Row style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
+      <a style={{color:'#333333', margin:'2vh 1vw'}}  target="_blank" href={'https://www.linkedin.com/in/joshrobertsv2/'}><FontAwesomeIcon style={{height:'4vh', width:'auto'}} icon={faLinkedinIn}/></a>
+      <a style={{color:'#333333', margin:'2vh 1vw'}}  target="_blank" href={'https://github.com/quantumspot'}><FontAwesomeIcon style={{height:'4vh', width:'auto'}} icon={faGithub}/></a>
+      </Row>
+      </Col>
+      </Row>
+      </Container>
       </div>
     </div>
 

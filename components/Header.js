@@ -1,5 +1,5 @@
 import React from 'react'
-import { Menu, Button, Grid, Container } from 'semantic-ui-react';
+import { Nav, Navbar } from 'react-bootstrap';
 import { Link } from '../routes';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
@@ -9,27 +9,28 @@ import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 
 const Header = () => {
   return (
-      <Menu style={{marginTop:'10px', backgroundColor:'transparent', border:'1px solid transparent'}}>
-     <Container>
-      <div style={{display:'flex', alignContent:'center'}}>
-        <motion.img whileHover ={{
-          scale: [1, 1.4, 1.2],
-          rotate: [0, 360],
-          transition: {
-            duration: .8
-          }
-        }} src={'/logo-eye.png'} width='160vw' height='90vh'/>
-        <Link route='/'><a className='item' style={{color: 'white', fontSize:'1.8rem', marginRight:'10rem'}}>obServerJS</a></Link>
-      </div>
-      <Menu.Menu style={{marginRight:'5rem'}} position='right'></Menu.Menu>
-        <Menu.Item style={{color: 'white'}} >Features</Menu.Item>
-        <Menu.Item style={{color: 'white'}}>Meet The Team</Menu.Item>
-        <Menu.Item style={{color: 'white'}}>Documentation</Menu.Item>
-        <Menu.Item><a target="_blank" style={{color:'white'}} href={'https://www.linkedin.com/company/observerjs'}><FontAwesomeIcon style={{height:'3vh', width:'auto', margin:'0 2vw'}} icon={faLinkedin}/></a></Menu.Item>
-        <Menu.Item><a target="_blank" style={{color:'white', marginLeft:'-3vw'}}  href={'https://github.com/oslabs-beta/obServerJS'}><FontAwesomeIcon style={{height:'3vh', width:'auto', margin:'0 2vw'}} icon={faGithub}/></a></Menu.Item>
-
-        </Container>
-      </Menu>
+    <div style={{display:'flex', justifyContent:'center', alignItems:'center', color:'white'}}>
+    <Navbar style={{backgroundColor:'#333333', zIndex:'1'}} className="navbar navbar-expand-md navbar-dark fixed-top" variant="white" expand="lg" collapseOnSelect id ='navbar' >
+    <motion.img whileHover ={{
+      scale: [1, 1.4, 1.2],
+      rotate: [0, 360],
+      transition: {
+        duration: .8
+      }
+    }} src={'/logo-eye.png'} width='160vw' height='90vh'/>
+    <Navbar.Brand className='d-none d-md-block' style={{fontSize:'1.6vw'}} href="#home">obServerJS</Navbar.Brand>
+    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+    <Nav className="ml-auto">
+    <Navbar.Collapse id="responsive-navbar-nav">
+      <Nav.Link style={{color:'white'}} href="#features">Features</Nav.Link>
+      <Nav.Link style={{color:'white'}} href="#pricing">Meet The Team</Nav.Link>
+      <Nav.Link style={{color:'white'}} href="#pricing">Documentation</Nav.Link>
+      </Navbar.Collapse>  
+      </Nav>
+      <Nav.Link target="_blank" href='https://www.linkedin.com/company/observerjs'><FontAwesomeIcon style={{marginLeft:'3vw', color:'white', height:'3vh', width:'auto'}} icon={faLinkedin}/></Nav.Link>
+      <Nav.Link target="_blank" href='https://github.com/oslabs-beta/obServerJS'><FontAwesomeIcon style={{height:'3vh', color:'white', width:'auto'}} icon={faGithub}/></Nav.Link>
+      </Navbar>
+    </div>
   )
 }
 
