@@ -1,22 +1,24 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Container, Header, Grid } from 'semantic-ui-react';
 import Image from 'next/image';
+import {Container, Grid, Col, Row, Card} from 'react-bootstrap';
 const Description = () => {
   return (
-    <Container>
-      <div style={{display:'flex', justifyContent:'space-between', alignItems:'center'}}>
-        <Image src={'/code-block.png'} width='600vw' height='380vh'/>
-      <div style={{display:'flex', flexDirection:'column', width:'30vw'}}>
-      <div style={{marginBottom:'2vh'}}>
-          <span style={{color:'black', fontSize:'3vw'}}> This Is </span>
-          <span style={{color:'#50b26c', fontSize:'3.1vw'}}> obServerJS</span>
+    <div style={{marginTop: '30vh', display:'flex', justifyContent:'center', alignItems:'center'}}>
+    <div style={{width:'260vw', marginLeft:'-3vw'}}>
+      <Image src={'/code-block.png'} width='600vw' height='400vh'/>
+    </div>
+    <div style={{width:'200vw', marginRight:'-3vw'}}>
+      <h2 style={{fontSize:'2.6vw'}}> This is <span style={{color:'#50b26c'}}>obServerJS</span></h2>
+      <p style={{fontSize:'2vw'}}>
+        obServerJS is the first backend debugging tool that allows developers to view the entire request and response lifecycle, along every routing and middleware function. 
+        Download our intuitively designed desktop application to have access to the expected response, a visual represention of the entire application stack (every possible route the response object can take in the server), 
+        and a testing suite to run multiple endpoints to check for errors.
+        </p>
+      </div>
           </div>
-          <p style={{fontSize:'1.5vw', color:'black'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non tellus tristique, fringilla nulla vel, pellentesque lacus. Sed viverra purus libero, sed lacinia ex euismod ac. Aliquam consequat, massa vel malesuada scelerisque, nulla mi cursus dui, eu sodales ligula eros id mi. Quisque lacus neque, commodo ut nisl euismod, commodo tincidunt orci. Sed ultrices, est vitae dignissim auctor, turpis risus porttitor ex, id placerat lorem justo vitae libero.</p>
-          </div>
-          </div>
-    </Container>
   )
 }
 
 export default Description
+
