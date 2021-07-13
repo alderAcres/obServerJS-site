@@ -8,7 +8,7 @@ import Feature from '../components/Feature';
 import Team from '../components/Team';
 export default function Home() {
 
-  const names = ['Tweeting', 'Studying', 'Napping', 'Slacking', 'Tindering', 'Coding', 'Snacking']
+  const names = ['Tweeting', 'Studying', 'Napping', 'Slacking', 'Tindering', 'Chatting', 'Coding', 'Snacking']
 
   const [newName, setnewName] = useState("");
 
