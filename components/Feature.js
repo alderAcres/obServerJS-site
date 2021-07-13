@@ -15,9 +15,9 @@ const Feature = () => {
           </div>
           <div style={{marginTop:'10vh', display:'flex', justifyContent:'space-between', alignItems:'center'}}>
       <Container style={{width:'28vw'}}>
-          <Header as='h2'>Simplify Backend Routing Architecture</Header>
+          <Header as='h2'>Track Execution & Visualize The Response Lifecycle</Header>
           <p>Measure the impact of your socila media campaigns through comprehensive reporting. Measure coversions by social channel and separate ROI between owned and paid media.</p>
-          <Button primary>Download Now</Button>
+          <Button primary>Try It Out</Button>
           </Container>
           <Image src={'/app-tree.png'} width='500rem' height='350rem'/>
           </div>

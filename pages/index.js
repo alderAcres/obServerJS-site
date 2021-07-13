@@ -6,6 +6,7 @@ import Image from 'next/image';
 import Description from '../components/Description';
 import Feature from '../components/Feature';
 import Team from '../components/Team';
+import Closing from '../components/Closing';
 export default function Home() {
 
   const names = ['Tweeting', 'Studying', 'Napping', 'Slacking', 'Tindering', 'Chatting', 'Coding', 'Snacking']
@@ -60,7 +61,7 @@ export default function Home() {
      <Image style={{zIndex:'2'}} src='/macbook-main.png' alt='computer image' height='390vh' width='390vw' />
      </motion.div> 
      </div>
-      <Container style={{marginTop:'58vh'}}>
+      <Container style={{marginTop:'30vh'}}>
       <Description/>
       </Container>
       <Container style={{marginTop:'36vh'}}>
@@ -68,6 +69,9 @@ export default function Home() {
       </Container>
       <Container>
         <Team/>
+      </Container>
+      <Container>
+        <Closing/>
       </Container>
     </Layout>
   )
