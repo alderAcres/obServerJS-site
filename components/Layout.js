@@ -8,8 +8,8 @@ const Layout = (props) => {
       <Head>
       <title>ObServerJS</title>
       <link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Righteous&display=swap" rel="stylesheet"/>
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Righteous&display=swap" rel="stylesheet"/>
       <meta name= 'keywords' content='express, node, javascript, debugging, backend' />
       </Head>
       <Header/>
