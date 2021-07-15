@@ -6,7 +6,7 @@ import { faLinkedin, faGithub, faMedium } from '@fortawesome/free-brands-svg-ico
 const Closing = () => {
   return (
     <div style={{marginTop:'20vh', textAlign:'center'}}>
-      <h1 style={{marginBottom:'10vh', fontSize:'2.6vw', fontWeight:'lighter', textDecoration:'underline'}}>Featured In Tech Accelerator</h1>
+      <h2 style={{marginBottom:'10vh', fontWeight:'lighter', textDecoration:'underline'}}>Featured In Tech Accelerator</h2>
         <Image src={'/os-labs.png'} width={'280vw'} height={'90vh'}/>
     <div style={{margin:'8vh', display:'flex', justifyContent:'center'}}>
       <a target="_blank" href={'https://www.linkedin.com/company/observerjs'}><FontAwesomeIcon style={{height:'6vh', width:'auto', margin:'0 2vw', color:'#333333'}} icon={faLinkedin}/></a>

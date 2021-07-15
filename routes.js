@@ -6,7 +6,9 @@ const routes = require('next-routes')();
   //arg 2 what component do we want to show
   //add on another route mapping BEFORE for other edge cases like campaign/new (overrides)
   
-  // routes.add('/campaigns/new', '/campaigns/new',)
+routes.add('/feature', '/home/FeaturePage');
+routes.add('/team', '/home/TeamPage');
+
 
 
 module.exports = routes;

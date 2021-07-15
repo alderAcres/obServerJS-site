@@ -1,7 +1,7 @@
 import React, { Component, useState, useEffect, useCallback } from 'react'
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { Button, Container, Col } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 
 const Intro = () => {
 
@@ -19,26 +19,25 @@ const Intro = () => {
   }, [shuffle])
 
   return (
-    <div>
-    <div style={{marginTop:'16vh', display:'flex', justifyContent: 'space-evenly', alignItems:'center'}}>
-    <div style={{ color: 'white', textAlign: 'center', width: '42vw', marginTop: '10vh', display:'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
-      <div>
+    <div className='intro-container'>
+    <div className='intro-box1'>
         <motion.h1 whileHover = {{
           scale: 1.2,
           transition: {
             duration: .2
           }
-        }} style={{fontSize:'4vw', color:'white'}}>Less Time Debugging</motion.h1>
-        <motion.h1 whileHover ={{
+        }} id ='header-intro' style={{fontSize:'4vw', color:'#333333',  display:'inline-block', whiteSpace:'nowrap' }}>Less Time Debugging</motion.h1>
+        <motion.h1 id ='header-intro' whileHover ={{
           scale: 1.2,
           transition: {
             duration: .2
           }
-        }} style={{fontSize:'4vw', color:'white', display:'inline-block', whiteSpace:'nowrap'}}>More Time<motion.span>{` ${newName}`}</motion.span>
+        }} style={{fontSize:'4vw', color:'#333333', display:'inline-block', whiteSpace:'nowrap' }}>More Time<motion.span>{` ${newName}`}</motion.span>
         </motion.h1>
-      </div>
-      <h2 style={{fontSize:'1.8vw', letterSpacing: '.08rem'}}>obServerJS saves developers time and headaches by providing transparent express routing.</h2>
-      <Button className='btn-lg' variant='light' style={{marginTop:'3vh'}}>Try It Out</Button>
+  
+      <h2 id='p-intro' style={{fontSize:'1.9vw', letterSpacing: '.04rem'}}>obServerJS saves developers time and headaches by providing transparent express routing.</h2>
+      <div style={{display:'flex', justifyContent:'center'}}>
+      <Button id= 'button-mobile' className='btn-md' variant='dark' style={{display: 'flex', justifyContent:'center', width:'16vw', fontSize:'2.3vw', height:'auto', marginTop:'3vh', border:'none', backgroundColor:'#50b26c'}}>Download</Button>
       </div>
       <motion.div initial='hidden' animate='visible' variants={{
         hidden: {
@@ -54,6 +53,8 @@ const Intro = () => {
         }
       }}>
        </motion.div> 
+       </div>
+       <div className='intro-box2'>
      <Image src='/macbook-main.png' alt='computer image' height='390vh' width='390vw' />
      </div>
      </div>
