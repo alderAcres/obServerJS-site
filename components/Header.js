@@ -1,5 +1,5 @@
 import React from 'react'
-import { Nav, Navbar } from 'react-bootstrap';
+import { Nav, Navbar, NavbarBrand } from 'react-bootstrap';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -25,11 +25,11 @@ const Header = () => {
     <Navbar.Collapse id="responsive-navbar-nav">
       <Link route={'/feature'}><Nav.Item style={{color:'white', marginRight:'1.6vw', cursor:'pointer'}}>Features</Nav.Item></Link>
      <Link style={{color:'white'}} route={'/team'}><Nav.Item style={{color:'white', marginRight:'.6vw', cursor:'pointer'}}>Meet The Team</Nav.Item></Link>
-      <Nav.Link style={{color:'white'}} href="#pricing">Documentation</Nav.Link>
+      <Link style={{color:'white'}} href="#pricing"><Nav.Item style={{color:'white', marginRight:'.6vw', cursor:'pointer'}}>Documentation</Nav.Item></Link>
       </Navbar.Collapse>  
       </Nav>
-      <Nav.Link target="_blank" href='https://www.linkedin.com/company/observerjs'><FontAwesomeIcon style={{marginLeft:'3vw', color:'white', height:'3vh', width:'auto'}} icon={faLinkedin}/></Nav.Link>
-      <Nav.Link target="_blank" href='https://github.com/oslabs-beta/obServerJS'><FontAwesomeIcon style={{height:'3vh', color:'white', width:'auto'}} icon={faGithub}/></Nav.Link>
+      <Nav.Link className='d-none d-md-block' target="_blank" href='https://www.linkedin.com/company/observerjs'><FontAwesomeIcon style={{marginLeft:'3vw', color:'white', height:'3vh', width:'auto'}} icon={faLinkedin}/></Nav.Link>
+      <Nav.Link className='d-none d-md-block' target="_blank" href='https://github.com/oslabs-beta/obServerJS'><FontAwesomeIcon style={{height:'3vh', color:'white', width:'auto'}} icon={faGithub}/></Nav.Link>
       </Navbar>
     </div>
   )
