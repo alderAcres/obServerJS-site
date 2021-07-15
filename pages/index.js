@@ -13,9 +13,7 @@ export default function Home() {
 
   return (
     <Layout>
-    <div style={{backgroundImage:`url(${background})`}}>
       <Intro/>
-    </div>
       <Description/>
       <Feature/>
       <Team/>

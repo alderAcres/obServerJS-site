@@ -7,10 +7,9 @@ const Layout = (props) => {
     <Container>
       <Head>
       <title>ObServerJS</title>
-      <link
-        rel="stylesheet"
-        href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.12/semantic.min.css"
-      />
+      <link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Righteous&display=swap" rel="stylesheet"/>
       <meta name= 'keywords' content='express, node, javascript, debugging, backend' />
       </Head>
       <Header/>

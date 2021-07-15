@@ -10,7 +10,7 @@ import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 const Header = () => {
   return (
     <div style={{display:'flex', justifyContent:'center', alignItems:'center', color:'white'}}>
-    <Navbar style={{backgroundColor:'#333333', zIndex:'1'}} className="navbar navbar-expand-md navbar-dark fixed-top" variant="white" expand="lg" collapseOnSelect id ='navbar' >
+    <Navbar style={{opacity:'.97', backgroundColor:'#333333', zIndex:'1'}} className="navbar navbar-expand-md navbar-dark fixed-top" variant="white" expand="lg" collapseOnSelect id ='navbar' >
     <motion.img whileHover ={{
       scale: [1, 1.4, 1.2],
       rotate: [0, 360],
@@ -18,7 +18,7 @@ const Header = () => {
         duration: .8
       }
     }} src={'/logo-eye.png'} width='160vw' height='90vh'/>
-    <Navbar.Brand className='d-none d-md-block' style={{fontSize:'1.6vw'}} href="#home">obServerJS</Navbar.Brand>
+    <Navbar.Brand className='d-none d-md-block' id='logo' style={{fontSize:'2.1vw'}} href="#home">obServerJS</Navbar.Brand>
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Nav className="ml-auto">
     <Navbar.Collapse id="responsive-navbar-nav">
