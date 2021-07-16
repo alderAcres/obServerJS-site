@@ -63,6 +63,10 @@ order: 1;
   align-items: center;
 }
 
+#nav-link {
+  margin-right: 2vw;
+}
+
 .desc-box2{
   grid-area: 'box2';
   width: 40vw;

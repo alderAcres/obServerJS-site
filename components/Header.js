@@ -23,9 +23,9 @@ const Header = () => {
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Nav className="ml-auto">
     <Navbar.Collapse id="responsive-navbar-nav">
-      <Link route={'/feature'}><Nav.Item style={{color:'white', marginRight:'1.6vw', cursor:'pointer'}}>Features</Nav.Item></Link>
-     <Link style={{color:'white'}} route={'/team'}><Nav.Item style={{color:'white', marginRight:'.6vw', cursor:'pointer'}}>Meet The Team</Nav.Item></Link>
-      <Link style={{color:'white'}} href="#pricing"><Nav.Item style={{color:'white', marginRight:'.6vw', cursor:'pointer'}}>Documentation</Nav.Item></Link>
+      <Link route={'/feature'}><Nav.Item id='nav-link' style={{color:'white', cursor:'pointer'}}>Features</Nav.Item></Link>
+      <Link style={{color:'white'}} route={'/team'}><Nav.Item id='nav-link' style={{color:'white', cursor:'pointer'}}>Meet The Team</Nav.Item></Link>
+      <Link style={{color:'white'}} href="/documentation"><Nav.Item id='nav-link' style={{color:'white',  cursor:'pointer'}}>Documentation</Nav.Item></Link>
       </Navbar.Collapse>  
       </Nav>
       <Nav.Link className='d-none d-md-block' target="_blank" href='https://www.linkedin.com/company/observerjs'><FontAwesomeIcon style={{marginLeft:'3vw', color:'white', height:'3vh', width:'auto'}} icon={faLinkedin}/></Nav.Link>
