@@ -125,7 +125,7 @@ order: 1;
 
 @media (max-width: 767px) {                  
   .intro-container {
-    margin-top: 30vh;
+    margin-top: 20vh;
     display: grid;
     grid-template-areas: "box1";
     align-items: center;
@@ -248,12 +248,19 @@ order: 1;
 @media (max-width: 767px) {                  
   .feature-box6{
  margin-top: -4vh;
+ margin-left: 0;
   }
 }
 
 @media (max-width: 767px) {                  
   .feature-box4{
  margin-top: 2vh;
+ margin-right: 0;
+  }
+}
+@media (max-width: 767px) {                  
+  .feature-box2{
+ margin-left: 0;
   }
 }
 
@@ -378,3 +385,4 @@ order: 1;
     margin-top: '10vh';
   }
 }
+
