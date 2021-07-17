@@ -36,8 +36,8 @@ const Intro = () => {
         </motion.h1>
   
       <h2 id='p-intro' style={{fontSize:'1.9vw', letterSpacing: '.04rem'}}>obServerJS saves developers time and headaches by providing transparent express routing.</h2>
-      <div style={{display:'flex', justifyContent:'center'}}>
-      <Button id= 'button-mobile' className='btn-md' variant='dark' style={{display: 'flex', justifyContent:'center', width:'16vw', fontSize:'2.3vw', height:'auto', marginTop:'3vh', border:'none', backgroundColor:'#50b26c'}}>Download</Button>
+      <div style={{display:'flex', justifyContent:'center', alignItems:'center', marginTop:'5vh'}}>
+      <Button id='button-mobile' className='btn-md' variant='dark' >Download</Button>
       </div>
       <motion.div initial='hidden' animate='visible' variants={{
         hidden: {
@@ -55,7 +55,7 @@ const Intro = () => {
        </motion.div> 
        </div>
        <div className='intro-box2'>
-     <Image src='/macbook-main.png' alt='computer image' height='390vh' width='390vw' />
+     <Image src='/macbook-main.png' alt='computer image' height='470vh' width='460vw' />
      </div>
      </div>
   )

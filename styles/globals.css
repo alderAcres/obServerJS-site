@@ -24,13 +24,25 @@ a {
   margin-top:25vh;
 }
 
+          
+  .contact-form  {
+     width: 72%;
+   }
+   @media (max-width: 767px) {                  
+    .contact-form {
+       width:80%;
+     }
+   }
+
 @media (max-width: 767px) {                  
  .feature-div  {
-    margin-top: 30vh;
+    margin-top: 20vh;
   }
 }
 
-
+#left-header {
+  text-align: center;
+}
 
 .desc-grid {
   margin-top: 23vh;
@@ -38,18 +50,10 @@ a {
   grid-template-areas: "box1 box2";
   grid-gap: 10px;
   justify-content: space-between;
-  text-align: center;
+  text-align: left;
+  margin-bottom: 10vh;
 }
 
-@media (max-width: 767px) {                  
-  .desc-grid {
-    margin-top: 15vh;
-    display: grid;
-    grid-template-areas: 
-    "box1"
-    "box2";
-  }
-}
 
 .desc-box1{
 grid-area:'box1';
@@ -63,10 +67,18 @@ order: 1;
   align-items: center;
 }
 
+#nav-link {
+  margin-right: 2vw;
+}
+
 .desc-box2{
   grid-area: 'box2';
   width: 40vw;
   order: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 767px) {                  
@@ -80,14 +92,14 @@ order: 1;
 .intro-container {
   display: grid;
   margin-top: 26vh;
+
   grid-template-areas: 'box1 box2';
   text-align: center;
-  width:90vw;
+  width:100%;
 }
 
 .intro-box1 {
   grid-area: box1;
-  width: 35vw;
   margin-left: 5vw;
   align-self: center;
 }
@@ -107,13 +119,13 @@ order: 1;
     "box2";
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align: left;
   }
 }
 
 @media (max-width: 767px) {                  
   .intro-container {
-    margin-top: 26vh;
+    margin-top: 30vh;
     display: grid;
     grid-template-areas: "box1";
     align-items: center;
@@ -152,7 +164,6 @@ order: 1;
     text-align: center;
   }
 }
-
 @media (max-width: 767px) {                  
   .desc-h2 {
     font-size: 4.8vw !important;
@@ -184,7 +195,7 @@ order: 1;
   "box5 box6";
   justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: left;
   padding-top: 20px;
 }
 
@@ -195,6 +206,10 @@ order: 1;
 .feature-box2 {
   grid-area: box2;
   order: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .feature-box3 {
   grid-area: box3;
@@ -205,6 +220,10 @@ order: 1;
   grid-area: box4;
   order: 4;
   margin-top: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .feature-box5 {
   margin-top: 15vh;
@@ -215,6 +234,10 @@ order: 1;
   margin-top: 8vh;
   grid-area: box6;
   order: 6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 @media (max-width: 767px) {                  
   .feature-box6{
@@ -234,15 +257,13 @@ order: 1;
  font-size: 5.2vw !important;
   }
 }
-
-
 .header-team {
   font-size: 2.8vw;
 }
 
 @media (max-width: 767px) {                  
   .feature-container {
-  margin-top: -5vh;
+  margin-top: -8vh;
   display: grid;
   grid-gap: 20px;
   grid-template-areas: 
@@ -254,28 +275,34 @@ order: 1;
   "box6";
   justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: left;
   }
 }
+
+
+#button-mobile {
+  font-size: 1.5vw;
+  width: 20vw;
+  height: auto !important;
+  background-color: #8CD8BE !important;
+  border: none;
+  color:black;
+  margin-top:4vh;
+}
+
 
 @media (max-width: 767px) {                  
   #button-mobile {
     height: 5vh ;
+    font-size: 2.6vw;
     width: 30vw !important;
-    font-size: 3.6vw ;
-  
+    background-color: #8CD8BE !important;
   }
 }
 @media (max-width: 767px) {                  
   #feature-header {
     margin-top: -6vh;
   }
-}
-
-#button-mobile {
-  font-size: 2vw !important;
-  width: 20vw;
-  height: auto !important;
 }
 
 .team-container {
@@ -322,5 +349,19 @@ order: 1;
 @media (max-width: 767px) {                  
   .team-box4 {
    margin-top: 6vh;
+  }
+}
+
+#github {
+  height: 50px;
+  position: fixed;
+  bottom: 5px;
+  right: 20px;
+  z-index: 10;
+}
+
+@media (max-width: 767px) {                  
+  #github {
+   display: none;
   }
 }

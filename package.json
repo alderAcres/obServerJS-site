@@ -4,9 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "build": "next build && next export",
+    "start": "next start"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
@@ -26,7 +25,11 @@
     "semantic-ui-react": "^2.0.3"
   },
   "devDependencies": {
-    "eslint": "7.30.0",
-    "eslint-config-next": "11.0.1"
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.2",
+    "eslint": "^7.30.0",
+    "eslint-config-next": "11.0.1",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-react": "^7.24.0"
   }
 }

@@ -14,7 +14,7 @@ const Contact= () => {
   return (
     <>
     <h3 className= 'desc-h2' style={{textAlign:'center', marginTop:'10vh'}}>If you'd like to become a contributor or have other inquires, reach out below.</h3>
-    <div className='contact-form'>
+    <div style={{padding: '10px', borderRadius:'4px', backgroundColor:'#aaaaaa'}} className='contact-form'>
       <div className='container' >
         <div className='row'>
           <div className='col-12 text-center' >
@@ -22,7 +22,7 @@ const Contact= () => {
               <form id='contact-form' onSubmit={handleSubmit(onSubmit)} noValidate>
                 {/* Row 1 of form */}
                 <div className='row formRow'>
-                  <div className='col-6'>
+                  <div style={{marginBottom: '2vh'}} className='col-6'>
                     <input
                       type='text'
                       name='name'
@@ -43,7 +43,7 @@ const Contact= () => {
                 </div>
                 {/* Row 2 of form */}
                 <div className='row formRow'>
-                  <div className='col'>
+                  <div style={{marginBottom: '2vh'}} className='col'>
                     <input
                       type='text'
                       name='subject'

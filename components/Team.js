@@ -6,7 +6,7 @@ import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons'
 const Team = () => {
   return (
     <div className="container">
-    <h1 className='headers' style={{marginTop:'20vh', textAlign:'center', marginBottom:'19vh'}}>Contributers</h1>
+    <h1 className='headers' style={{marginTop:'20vh', textAlign:'center', marginBottom:'19vh'}}>Contributors</h1>
     <div className='team-container'>
 <div className='team-box1'>
       <h3 className='header-team'>Julia Collins</h3>
