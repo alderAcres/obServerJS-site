@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const Feature = () => {
   return (
-<div id= 'feature-scroll' className='feature-div'>
+<div id= 'features' className='feature-div'>
     <h1 className='headers' id='feature-header' style={{marginBottom:'10vh', textAlign:'center'}}>Features</h1>
     <div className='feature-container'>
     <div className='feature-box1'>
