@@ -16,7 +16,7 @@ const Layout = (props) => {
       <Header/>
     {props.children}
     <div id='github'>
-    <a class="github-button" href="https://github.com/oslabs-beta/obServerJS" data-color-scheme="no-preference: dark_dimmed; light: dark_dimmed; dark: dark_dimmed;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star oslabs-beta/obServerJS on GitHub">Star</a>
+    <a className="github-button" href="https://github.com/oslabs-beta/obServerJS" data-color-scheme="no-preference: dark_dimmed; light: dark_dimmed; dark: dark_dimmed;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star oslabs-beta/obServerJS on GitHub">Star</a>
     </div>
     <p style={{margin: '8vh 0', textAlign:'center'}}>© 2021 obServerJS. All Rights Reserved.</p>
     </Container>
