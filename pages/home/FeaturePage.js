@@ -4,6 +4,9 @@ import Layout from '../../components/Layout';
 const FeaturePage = () => {
   return (
     <Layout>
+    <div style={{marginTop:'8vh'}}>
+    <br></br>
+    </div>
     <Feature/>
     </Layout>
   )
