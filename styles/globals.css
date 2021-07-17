@@ -187,6 +187,7 @@ order: 1;
   }
 }
 
+
 .feature-container {
   display: grid;
   grid-template-areas: 
@@ -363,5 +364,11 @@ order: 1;
 @media (max-width: 767px) {                  
   #github {
    display: none;
+  }
+}
+
+@media (max-width: 767px) {                  
+  #feature-page {
+    margin-top: '10vh';
   }
 }

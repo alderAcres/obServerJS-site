@@ -4,7 +4,7 @@ import Layout from '../../components/Layout';
 const FeaturePage = () => {
   return (
     <Layout>
-    <div style={{marginTop:'8vh'}}>
+    <div id='feature-page'>
     <br></br>
     </div>
     <Feature/>
