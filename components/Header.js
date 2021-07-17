@@ -19,12 +19,12 @@ const Header = () => {
       }
     }} src={'/logo-eye.png'} width='160vw' height='90vh'/>
     </LinkTo>
-    <LinkTo href='/'><Navbar.Brand className='d-none d-md-block' id='logo' style={{fontSize:'2.1vw'}}>obServerJS</Navbar.Brand></LinkTo>
+    <Link route={'/'} ><Navbar.Brand className='d-none d-md-block' id='logo' style={{fontSize:'2.1vw'}}>obServerJS</Navbar.Brand></Link>
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Nav className="ml-auto">
     <Navbar.Collapse id="responsive-navbar-nav">
-      <Link route={'/feature'}><Nav.Item id='nav-link' style={{color:'white', cursor:'pointer'}}>Features</Nav.Item></Link>
-      <Link style={{color:'white'}} route={'/team'}><Nav.Item id='nav-link' style={{color:'white', cursor:'pointer'}}>Meet The Team</Nav.Item></Link>
+      <Link route={'/#feature-scroll'}><Nav.Item id='nav-link' style={{color:'white', cursor:'pointer'}}>Features</Nav.Item></Link>
+      <Link route={'/#team-scroll'} style={{color:'white'}}><Nav.Item id='nav-link' style={{color:'white', cursor:'pointer'}}>Meet The Team</Nav.Item></Link>
       <Link style={{color:'white'}} href="/documentation"><Nav.Item id='nav-link' style={{color:'white',  cursor:'pointer'}}>Documentation</Nav.Item></Link>
       </Navbar.Collapse>  
       </Nav>

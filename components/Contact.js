@@ -13,7 +13,7 @@ const Contact= () => {
 
   return (
     <>
-    <h3 className= 'desc-h2' style={{textAlign:'center', marginTop:'10vh'}}>If you'd like to become a contributor or have other inquires, reach out below.</h3>
+    <h3 className= 'desc-h2' style={{textAlign:'center', marginTop:'10vh'}}>If you'd like to become a contributor or have other inquires, reach out below or contact us directly at info@observerjs.com.</h3>
     <div style={{padding: '10px', borderRadius:'4px', backgroundColor:'#aaaaaa'}} className='contact-form'>
       <div className='container' >
         <div className='row'>
