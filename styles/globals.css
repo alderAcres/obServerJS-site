@@ -172,6 +172,7 @@ order: 1;
 @media (max-width: 767px) {                  
   .desc-p {
     font-size: 3.2vw !important;
+    text-align: center;
   }
 }
 
@@ -280,7 +281,7 @@ order: 1;
   "box6";
   justify-content: center;
   align-items: center;
-  text-align: left;
+  text-align: center;
   }
 }
 
@@ -292,7 +293,7 @@ order: 1;
   background-color: #8CD8BE !important;
   border: none;
   color:black;
-  margin-top:4vh;
+  margin-top: 1.5vh;
 }
 
 
@@ -302,6 +303,7 @@ order: 1;
     font-size: 2.6vw;
     width: 30vw !important;
     background-color: #8CD8BE !important;
+    margin-top: 0;
   }
 }
 @media (max-width: 767px) {                  
