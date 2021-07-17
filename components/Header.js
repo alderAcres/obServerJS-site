@@ -23,8 +23,8 @@ const Header = () => {
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Nav className="ml-auto">
     <Navbar.Collapse id="responsive-navbar-nav">
-      <Link route={'/#feature-scroll'}><Nav.Item id='nav-link' style={{color:'white', cursor:'pointer'}}>Features</Nav.Item></Link>
-      <Link route={'/#team-scroll'} style={{color:'white'}}><Nav.Item id='nav-link' style={{color:'white', cursor:'pointer'}}>Meet The Team</Nav.Item></Link>
+      <Link route={'/#features'}><Nav.Item id='nav-link' style={{color:'white', cursor:'pointer'}}>Features</Nav.Item></Link>
+      <Link route={'/#team'} style={{color:'white'}}><Nav.Item id='nav-link' style={{color:'white', cursor:'pointer'}}>Meet The Team</Nav.Item></Link>
       <Link style={{color:'white'}} href="/documentation"><Nav.Item id='nav-link' style={{color:'white',  cursor:'pointer'}}>Documentation</Nav.Item></Link>
       </Navbar.Collapse>  
       </Nav>
