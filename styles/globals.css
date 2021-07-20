@@ -412,12 +412,13 @@ margin-left: 4vw;
 }
 
 .download {
+  margin: 20vh 0;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 36vh;
   width:100%;
-  background-color: black;
+  background-color: #333333;
   flex-direction: column;
 }
 
