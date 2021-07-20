@@ -44,22 +44,6 @@ a {
   text-align: center;
 }
 
-.desc-grid {
-  margin-top: 23vh;
-  display: grid;
-  grid-template-areas: "box1 box2";
-  grid-gap: 10px;
-  justify-content: space-between;
-  text-align: left;
-  margin-bottom: 10vh;
-}
-
-
-.desc-box1{
-grid-area:'box1';
-align-self: center;
-order: 1;
-}
 .contact-form{
   margin:10vh 10vw 10vh 10vw;
   display: flex;
@@ -71,43 +55,13 @@ order: 1;
   margin-right: 2vw;
 }
 
-.desc-box2{
-  grid-area: 'box2';
-  width: 40vw;
-  order: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-@media (max-width: 767px) {                  
-  .desc-box2 {
-    width: 100%;
-    justify-self: center;
-  }
-}
-
-
-.intro-container {
+.desc-grid {
+  margin-top: 23vh;
   display: grid;
-  margin-top: 26vh;
-
-  grid-template-areas: 'box1 box2';
-  text-align: center;
-  width:100%;
-}
-
-.intro-box1 {
-  grid-area: box1;
-  margin-left: 5vw;
-  align-self: center;
-}
-
-.intro-box2 {
-  width: 44vw;
-  height: auto;
-  grid-area: box2;
+  grid-template-areas: "box1 box2";
+  grid-gap: 10px;
+  justify-content: center;
+  margin-bottom: 10vh;
 }
 
 @media (max-width: 767px) {                  
@@ -123,15 +77,72 @@ order: 1;
   }
 }
 
+.desc-box1{
+grid-area:'box1';
+align-self: center;
+order: 1;
+width: 40vw;
+margin-left: 4vw;
+}
+
+.desc-box2{
+  grid-area: 'box2';
+  width: 40vw;
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 767px) {                  
+  .desc-box1 {
+    width: 100%;
+    justify-self: center;
+  }
+}
+@media (max-width: 767px) {                  
+  .desc-box2 {
+    width: 100%;
+    justify-self: center;
+  }
+}
+
+.intro-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 26vh;
+  text-align: center;
+}
+
+.intro-box1 {
+  width: 40vw;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  margin-right: 5vw;
+}
+
+
+.intro-box2 {
+  margin-left: 5vw;
+  width:40vw;
+}
+
+
+
 @media (max-width: 767px) {                  
   .intro-container {
     margin-top: 20vh;
-    display: grid;
-    grid-template-areas: "box1";
+    width: 100%;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    width: 96%;
   }
 }
+
 @media (max-width: 767px) {                  
   #header-intro {
     font-size: 7vw !important;
@@ -158,12 +169,15 @@ order: 1;
 
 @media (max-width: 767px) {                  
   .intro-box1 {
-    width:65vw;
-    justify-self: center;
+    width: 100%;
     align-self: center;
-    text-align: center;
+    margin-top: 5vh;
+    margin-right: 0px;
+    margin-bottom: 5vh;
+  
   }
 }
+
 @media (max-width: 767px) {                  
   .desc-h2 {
     font-size: 4.8vw !important;
