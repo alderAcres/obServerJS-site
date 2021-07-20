@@ -11,7 +11,7 @@ const Closing = () => {
     <div style={{margin:'8vh', display:'flex', justifyContent:'center'}}>
       <a target="_blank" href={'https://www.linkedin.com/company/observerjs'}><FontAwesomeIcon style={{height:'6vh', width:'auto', margin:'0 2vw', color:'#333333'}} icon={faLinkedin}/></a>
       <a target="_blank" href={'https://github.com/oslabs-beta/obServerJS'}><FontAwesomeIcon style={{height:'6vh', width:'auto', margin:'0 2vw', color:'#333333'}} icon={faGithub}/></a>
-      <FontAwesomeIcon style={{height:'6vh', width:'auto', margin:'0 2vw'}} icon={faMedium}/>
+      <a target="_blank" href='https://medium.com/@observerjs/the-best-kept-secret-of-express-js-76672e1fb463'><FontAwesomeIcon style={{height:'6vh', color:'#333333', width:'auto', margin:'0 2vw'}} icon={faMedium}/></a>
     </div>
   </div>
   )
