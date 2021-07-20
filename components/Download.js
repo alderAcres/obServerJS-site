@@ -7,8 +7,8 @@ const Download = () => {
     <div className='download'>
     <h2 className='download-h2'>Download</h2>
     <div className='download-container'>
-    <FontAwesomeIcon id='icon' style={{height:'9vh', width:'auto'}} icon={faApple}/>
-    <FontAwesomeIcon id='icon'style={{height:'8vh', width:'auto'}} icon={faMicrosoft}/>
+    <a target="_blank" href='https://github.com/oslabs-beta/obServerJS'><FontAwesomeIcon id='icon' style={{height:'9vh', width:'auto'}} icon={faApple}/></a>
+    <a target="_blank" href='https://github.com/oslabs-beta/obServerJS'><FontAwesomeIcon id='icon'style={{height:'8vh', width:'auto'}} icon={faMicrosoft}/></a>
     </div>
     </div>
 
