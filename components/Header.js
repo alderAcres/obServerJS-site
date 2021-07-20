@@ -26,11 +26,11 @@ const Header = () => {
       <Link route={'/#features'}><Nav.Item id='nav-link' style={{color:'white', cursor:'pointer'}}>Features</Nav.Item></Link>
       <Link route={'/#team'} style={{color:'white'}}><Nav.Item id='nav-link' style={{color:'white', cursor:'pointer'}}>Meet The Team</Nav.Item></Link>
       <Link style={{color:'white'}} href='https://github.com/oslabs-beta/obServerJS'><Nav.Item id='nav-link' style={{color:'white',  cursor:'pointer'}}>Documentation</Nav.Item></Link>
-      <Button style={{backgroundColor: '#8CD8BE', border:'none', color: 'black', width:''}} href="https://quantumspot.typeform.com/to/HMDJAtmM">Contribute</Button>
+      <Button id='button-header' style={{backgroundColor: '#8CD8BE', border:'none', color: 'black', width:''}} href="https://quantumspot.typeform.com/to/HMDJAtmM">Contribute</Button>
       </Navbar.Collapse>  
       </Nav>
-      <Nav.Link className='d-none d-md-block' target="_blank" href='https://www.linkedin.com/company/observerjs'><FontAwesomeIcon style={{marginLeft:'3vw', color:'white', height:'3vh', width:'auto'}} icon={faLinkedin}/></Nav.Link>
-      <Nav.Link className='d-none d-md-block' target="_blank" href='https://github.com/oslabs-beta/obServerJS'><FontAwesomeIcon style={{height:'3vh', color:'white', width:'auto'}} icon={faGithub}/></Nav.Link>
+      <Nav.Link className='d-none d-md-block' target="_blank" href='https://www.linkedin.com/company/observerjs'><FontAwesomeIcon id='icon-class' style={{marginLeft:'3vw', color:'white', height:'3vh', width:'auto'}} icon={faLinkedin}/></Nav.Link>
+      <Nav.Link className='d-none d-md-block' target="_blank" href='https://github.com/oslabs-beta/obServerJS'><FontAwesomeIcon id='icon-class' style={{height:'3vh', color:'white', width:'auto'}} icon={faGithub}/></Nav.Link>
       </Navbar>
     </div>
   )

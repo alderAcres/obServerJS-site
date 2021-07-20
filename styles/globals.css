@@ -439,3 +439,17 @@ width: 40vw;
   color: white;
   margin: 0 8vw;
 }
+
+
+@media (max-width: 950px) {                  
+  #button-header {
+   display: none;
+  }
+}
+
+
+@media (max-width: 900px) {                  
+  #icon-class {
+   display: none;
+  }
+}
