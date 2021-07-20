@@ -35,8 +35,8 @@ const Intro = () => {
         }} style={{fontSize:'4vw', color:'#333333', display:'inline-block', whiteSpace:'nowrap' }}>More Time<motion.span>{` ${newName}`}</motion.span>
         </motion.h1>
   
-      <h2 id='p-intro' style={{fontSize:'1.9vw', letterSpacing: '.04rem'}}>obServerJS saves developers time and headaches by providing transparent express routing.</h2>
-      <div style={{display:'flex', justifyContent:'center', alignItems:'center', marginTop:'5vh'}}>
+      <h2 id='p-intro' style={{fontSize:'1.9vw', letterSpacing: '.04rem'}}>obServerJS saves developers time by providing transparent express routing and enables a smoother debugging process.</h2>
+      <div style={{display:'flex', justifyContent:'center', alignItems:'center', marginTop:'2vh'}}>
       <Button id='button-mobile' className='btn-md' variant='dark' >Download</Button>
       </div>
       <motion.div initial='hidden' animate='visible' variants={{
@@ -55,7 +55,7 @@ const Intro = () => {
        </motion.div> 
        </div>
        <div className='intro-box2'>
-     <Image src='/macbook-main.png' alt='computer image' height='470vh' width='460vw' />
+     <Image src='/macbook-main.png' alt='computer image' height='400vh' width='400vw' />
      </div>
      </div>
   )
