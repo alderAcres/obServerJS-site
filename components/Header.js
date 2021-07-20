@@ -1,5 +1,5 @@
 import React from 'react'
-import { Nav, Navbar, NavbarBrand } from 'react-bootstrap';
+import { Nav, Navbar, NavbarBrand, Button } from 'react-bootstrap';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -25,7 +25,8 @@ const Header = () => {
     <Navbar.Collapse id="responsive-navbar-nav">
       <Link route={'/#features'}><Nav.Item id='nav-link' style={{color:'white', cursor:'pointer'}}>Features</Nav.Item></Link>
       <Link route={'/#team'} style={{color:'white'}}><Nav.Item id='nav-link' style={{color:'white', cursor:'pointer'}}>Meet The Team</Nav.Item></Link>
-      <Link style={{color:'white'}} href="/documentation"><Nav.Item id='nav-link' style={{color:'white',  cursor:'pointer'}}>Documentation</Nav.Item></Link>
+      <Link style={{color:'white'}} href='https://github.com/oslabs-beta/obServerJS'><Nav.Item id='nav-link' style={{color:'white',  cursor:'pointer'}}>Documentation</Nav.Item></Link>
+      <Button style={{backgroundColor: '#8CD8BE', border:'none', color: 'black', width:''}} href="https://quantumspot.typeform.com/to/HMDJAtmM">Contribute</Button>
       </Navbar.Collapse>  
       </Nav>
       <Nav.Link className='d-none d-md-block' target="_blank" href='https://www.linkedin.com/company/observerjs'><FontAwesomeIcon style={{marginLeft:'3vw', color:'white', height:'3vh', width:'auto'}} icon={faLinkedin}/></Nav.Link>
