@@ -140,7 +140,7 @@ width: 40vw;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    margin: 32vh 0 8vh 0;
+    margin: 28vh 0 16vh 0;
   }
 }
 
