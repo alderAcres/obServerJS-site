@@ -26,7 +26,12 @@ const Header = () => {
       <Link route={'/#features'}><Nav.Item id='nav-link' style={{color:'white', cursor:'pointer'}}>Features</Nav.Item></Link>
       <Link route={'/#team'} style={{color:'white'}}><Nav.Item id='nav-link' style={{color:'white', cursor:'pointer'}}>Meet The Team</Nav.Item></Link>
       <Link style={{color:'white'}} href='https://github.com/oslabs-beta/obServerJS'><Nav.Item id='nav-link' style={{color:'white',  cursor:'pointer'}}>Documentation</Nav.Item></Link>
-      <Button id='button-header' style={{backgroundColor: '#8CD8BE', border:'none', color: 'black', width:''}} href="https://quantumspot.typeform.com/to/HMDJAtmM">Contribute</Button>
+      <motion.a  whileHover={{
+        scale: 1.2,
+        transition: { duration: 1 },
+      }} target="_blank" href="https://quantumspot.typeform.com/to/HMDJAtmM">
+      <Button style={{backgroundColor: '#8CD8BE', border:'none', color: 'black', width:''}} className='btn-md' variant='dark' >Contribute</Button>
+      </motion.a>
       </Navbar.Collapse>  
       </Nav>
       <Nav.Link className='d-none d-md-block' target="_blank" href='https://www.linkedin.com/company/observerjs'><FontAwesomeIcon id='icon-class' style={{marginLeft:'3vw', color:'white', height:'3vh', width:'auto'}} icon={faLinkedin}/></Nav.Link>

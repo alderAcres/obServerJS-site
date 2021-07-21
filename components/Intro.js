@@ -37,7 +37,10 @@ const Intro = () => {
   
       <h2 id='p-intro' style={{fontSize:'1.9vw', letterSpacing: '.04rem'}}>obServerJS saves developers time by providing transparent express routing a smoother debugging process.</h2>
       <div style={{display:'flex', justifyContent:'center', alignItems:'center', marginTop:'2vh'}}>
-      <a target="_blank" href='https://github.com/oslabs-beta/obServerJS'><Button id='button-mobile' className='btn-md' variant='dark' >Download</Button></a>
+      <motion.a  whileHover={{
+        scale: 1.2,
+        transition: { duration: 1 },
+      }} target="_blank" href='https://github.com/oslabs-beta/obServerJS'><Button id='button-mobile' className='btn-md' variant='dark' >Download</Button></motion.a>
       </div>
       <motion.div initial='hidden' animate='visible' variants={{
         hidden: {
