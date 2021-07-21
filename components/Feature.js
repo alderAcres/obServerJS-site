@@ -1,7 +1,7 @@
 import React from 'react'
 import {Container, Button, Row, Col } from 'react-bootstrap'; 
 import Image from 'next/image';
-
+import { motion } from 'framer-motion';
 
 const Feature = () => {
   return (
@@ -16,7 +16,10 @@ const Feature = () => {
           <p className= 'desc-p' style={{fontSize:'2vw'}}>obServerJS enables developers to simplify complex server-side code 
           by visually displaying the exact path the response object takes given a specific url end point. Expect nothing less than 
           full server-side transparancy with obServerJS. </p>
-          <a target="_blank" href='https://github.com/oslabs-beta/obServerJS'><Button id= 'button-mobile' className="btn-md" style={{textAlign: 'center'}}>Download Now</Button></a>
+          <motion.a  whileHover={{
+            scale: 1.2,
+            transition: { duration: 1 },
+          }} target="_blank" href='https://github.com/oslabs-beta/obServerJS'><Button id='button-mobile' className='btn-md' variant='dark' >Download</Button></motion.a>
         </div> 
         <div className='feature-box' style={{marginTop:'8vh'}}>
           <Image src={'/dash1.png'} alt='dashboard' width='680vw' height='440vh'/>
@@ -28,7 +31,10 @@ const Feature = () => {
           reducing complexity and enabling for a quicker understanding of all potential routes the response object can take through 
           routing and controller files.</p>
 
-          <a target="_blank" href='https://github.com/oslabs-beta/obServerJS'><Button id= 'button-mobile' className="btn-md" style={{textAlign: 'center'}}>Try It Out</Button></a>
+          <motion.a  whileHover={{
+            scale: 1.2,
+            transition: { duration: 1 },
+          }} target="_blank" href='https://github.com/oslabs-beta/obServerJS'><Button id='button-mobile' className='btn-md' variant='dark' >Try It Out</Button></motion.a>
       
         </div>
         <div className='feature-box5' style={{marginTop:'8vh'}}>
@@ -39,7 +45,10 @@ const Feature = () => {
               <p className= 'desc-p' style={{fontSize:'2vw'}}>To make the debugging process even more efficient, obServerJS has a 
               testing suite that offers the options of adding multiple endpoints and and to gain information on whether or not errors 
               are thrown.</p>
-              <a target="_blank" href='https://github.com/oslabs-beta/obServerJS'><Button id= 'button-mobile' className="btn-md" >Read The Docs</Button></a>
+              <motion.a  whileHover={{
+                scale: 1.2,
+                transition: { duration: 1 },
+              }} target="_blank" href='https://github.com/oslabs-beta/obServerJS'><Button id='button-mobile' className='btn-md' variant='dark' >Read The Docs</Button></motion.a>
               </div>
                </div>
               </div>
