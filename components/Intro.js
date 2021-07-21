@@ -55,7 +55,7 @@ const Intro = () => {
        </motion.div> 
        </div>
        <div className='intro-box2'>
-     <Image src='/macbook-main.png' alt='computer image' height='400vh' width='400vw' />
+     <Image id='computer' src='/macbook-main.png' alt='computer image' height='400vh' width='400vw' />
      </div>
      </div>
   )
