@@ -7,7 +7,7 @@ const Description = () => {
   return (
     <div className='desc-grid' >
     <div className='desc-box1'>
-      <Image src={'/code-block.png'} alt='code-block' width='600vw' height='360vh'/>
+      <Image src={'/dash2.png'} alt='code-block' width='600vw' height='360vh'/>
     </div>
     <div className='desc-box2'>
       <h2 className= 'desc-h2' style={{fontSize:'2.6vw', textAlign:'center', marginBottom:'3vh'}}> This is <span style={{color:'#8CD8BE'}}>obServerJS</span></h2>
