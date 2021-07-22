@@ -129,7 +129,9 @@ max-width: 600px;
 @media (max-width: 767px) {                  
   .desc-box2 {
   order: 2;
-  margin-left: 3vw;
+  margin-left: 0;
+  width: 80%;
+  justify-self: center;
   }
 }
 @media (min-width: 1267px) {                  
@@ -142,10 +144,10 @@ max-width: 600px;
 }
 
 @media (max-width: 767px) {                  
-  .desc-box2 {
+  .desc-box1 {
     width: 100%;
     justify-self: center;
-    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -174,13 +176,6 @@ max-width: 600px;
 }
 
 
-@media (max-width: 767px) {                  
-  .intro-container h2 {
-    margin-top: 1.4vh;
-    font-size: 200%;
-  }
-}
-
 @media (min-width: 1367px) {                  
   .intro-box2 {
     margin-left: 6vw;
@@ -194,7 +189,8 @@ max-width: 600px;
 
 @media (max-width: 767px) {                  
   .intro-box1 {
-    width: 100%;
+    width: 80%;
+    justify-self: center;
     grid-column-start: 1;
     grid-column-end: 3;
     display:flex;
@@ -221,12 +217,24 @@ max-width: 600px;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    margin: 28vh 0 16vh 0;
+    margin: 28vh 0 12vh 0;
   }
 }
 @media (min-width: 1467px) {                  
   #header-intro {
     font-size: 56px !important;
+  }
+}
+@media (max-width: 767px) {                  
+  #header-intro {
+    font-size: 7vw !important;
+    margin-bottom: 1vh;
+  }
+}
+@media (max-width: 767px) {                  
+  #p-intro {
+    font-size: 3vw !important;
+    margin-top:2vh;
   }
 }
 
@@ -260,12 +268,12 @@ max-width: 600px;
 
 @media (max-width: 767px) {                  
   .desc-h2 {
-    font-size: 4.8vw ;
+    font-size: 4.8vw !important;
   }
 }
 @media (max-width: 767px) {                  
   .desc-p {
-    font-size: 3.2vw;
+    font-size: 3.3vw !important;
     text-align: center;
   }
 }
@@ -357,8 +365,9 @@ max-width: 600px;
 }
 @media (max-width: 767px) {                  
   .feature-box6{
- margin-top: -4vh;
- margin-left: 0;
+ margin:0;
+ justify-self: center;
+ width:80%;
   }
 }
 
@@ -366,11 +375,15 @@ max-width: 600px;
   .feature-box4{
  margin-top: 2vh;
  margin-right: 0;
+ justify-self: center;
+ width:80%;
   }
 }
 @media (max-width: 767px) {                  
   .feature-box2{
  margin-left: 0;
+width: 80%;
+justify-self: center;
   }
 }
 
@@ -378,9 +391,10 @@ max-width: 600px;
 .header-team {
   font-size: 2.8vw;
 }
-@media (min-width: 767px) {                  
+@media (min-width: 1267px) {                  
   .header-team{
  font-size: 1.4vw;
+
   }
 }
 
@@ -463,6 +477,12 @@ max-width: 600px;
   justify-content: center;
   align-items: center;
   text-align: center;
+  }
+}
+
+@media (min-width: 1167px) {                  
+  .team-container {
+  margin-top: -45px;
   }
 }
 
