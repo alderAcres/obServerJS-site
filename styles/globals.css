@@ -19,7 +19,11 @@ a {
   font-family: 'Righteous', cursive;
   letter-spacing: .1rem;
 }
-
+@media (min-width: 1200px) {                  
+  #logo {
+     font-size: 30px !important;
+   }
+ }
 .feature-div {
   margin-top:15vh;
 }
