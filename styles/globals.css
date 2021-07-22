@@ -58,13 +58,28 @@ a {
 .desc-grid {
   margin-top: 23vh;
   display: grid;
-  grid-template-areas: "box1 box2";
-  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  "box1 box2";
   grid-gap: 10px;
-  justify-content: space-around;
+  align-items: center;
   margin-bottom: 10vh;
   max-width: 1400px !important;
 }
+
+@media (min-width: 1367px) {                  
+  .desc-grid {
+  margin-top: 23vh;
+  display: grid;
+  grid-template-areas: 
+  "box1 box2";
+  grid-gap: 0px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10vh;
+  text-align: center;
+  }
+}
+
 
 @media (max-width: 767px) {                  
   .desc-grid {
@@ -86,26 +101,42 @@ grid-area:'box1';
 align-self: center;
 order: 1;
 width: 40vw;
+margin-right: 3vw;
+max-width: 600px;
 }
 
 .desc-box2{
   grid-area: 'box2';
-  width: 40vw;
   order: 2;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 2vw;
-  max-width:670px;
+  margin-left: 3vw;
+  width: 40vw;
+  max-width: 600px;
 }
-@media (max-width: 767px) {                  
+@media (min-width: 1267px) {                  
   .desc-box1 {
-  width: 100%;
   order: 1;
-  margin-left: 0;
+  margin-right: 3vw;
   }
 }
+@media (max-width: 767px) {                  
+  .desc-box2 {
+  order: 2;
+  margin-left: 3vw;
+  }
+}
+@media (min-width: 1267px) {                  
+  .desc-box2 {
+   width:40vw;
+   text-align: center;
+   justify-self: center;
+   margin-left: 0;
+  }
+}
+
 @media (max-width: 767px) {                  
   .desc-box2 {
     width: 100%;
@@ -128,14 +159,14 @@ width: 40vw;
 .intro-box1 {
   grid-column-start: 1;
   grid-column-end: 2;
-  max-width: 500px !important;
+  max-width: 600px;
 }
 
 
 .intro-box2 {
   grid-column-start: 2;
   grid-column-end: 3;
-  min-width: 360px;
+  max-width: 600px;
 }
 
 
@@ -146,6 +177,11 @@ width: 40vw;
   }
 }
 
+@media (min-width: 1367px) {                  
+  .intro-box2 {
+    margin-left: 6vw;
+  }
+}
 @media (max-width: 767px) {                  
   .intro-box2 {
     display: none;
@@ -208,12 +244,13 @@ width: 40vw;
 }
 @media (min-width: 1467px) {                  
   .desc-h2 {
-    font-size: 56px !important;
+    font-size: 40px !important;
   }
 }
 @media (min-width: 1467px) {                  
   .desc-p {
     font-size: 26px !important;
+    text-align: center !important;
   }
 }
 
@@ -234,6 +271,17 @@ width: 40vw;
     font-size: 7.8vw !important;
   }
 }
+@media (min-width: 1200px) {                  
+  .headers {
+    font-size: 46px;
+  }
+}
+
+@media (min-width: 1200px) {                  
+  .obs-header {
+    font-size: 30px;
+  }
+}
 
 .feature-container {
   display: grid;
@@ -247,10 +295,16 @@ width: 40vw;
   padding-top: 20px;
   max-width: 1400px;
 }
+@media (min-width: 1267px) {                  
+  .feature-container{
+    text-align: center !important;
+  }
+}
 
 .feature-box1 {
   grid-area: box1;
   order: 1;
+  max-width: 600px;
 }
 .feature-box2 {
   grid-area: box2;
@@ -260,11 +314,13 @@ width: 40vw;
   align-items: center;
   flex-direction: column;
   margin-left: 4vw;
+  max-width: 600px;
 }
 .feature-box3 {
   grid-area: box3;
   order: 3;
   margin-top: 10vh;
+  max-width: 600px;
 }
 .feature-box4 {
   grid-area: box4;
@@ -276,11 +332,13 @@ width: 40vw;
   align-items: center;
   flex-direction: column;
   margin-right: 5vw;
+  max-width: 600px;
 }
 .feature-box5 {
   margin-top: 15vh;
   grid-area: box5;
   order: 5;
+  max-width: 600px;
 }
 .feature-box6 {
   margin-top: 8vh;
@@ -291,6 +349,7 @@ width: 40vw;
   align-items: center;
   flex-direction: column;
   margin-left:4vw;
+  max-width: 600px;
 }
 @media (max-width: 767px) {                  
   .feature-box6{
@@ -311,16 +370,22 @@ width: 40vw;
   }
 }
 
+
+.header-team {
+  font-size: 2.8vw;
+}
+@media (min-width: 767px) {                  
+  .header-team{
+ font-size: 1.4vw;
+  }
+}
+
 @media (max-width: 767px) {                  
   .header-team{
  margin-top: -4vh;
  font-size: 5.2vw !important;
   }
 }
-.header-team {
-  font-size: 2.8vw;
-}
-
 @media (max-width: 767px) {                  
   .feature-container {
   margin-top: -8vh;
