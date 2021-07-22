@@ -26,7 +26,7 @@ const Header = () => {
       <Link route={'/#features'}><Nav.Item id='nav-link' style={{color:'white', cursor:'pointer'}}>Features</Nav.Item></Link>
       <Link route={'/#team'} style={{color:'white'}}><Nav.Item id='nav-link' style={{color:'white', cursor:'pointer'}}>Meet The Team</Nav.Item></Link>
       <Link style={{color:'white'}} href='https://github.com/oslabs-beta/obServerJS'><Nav.Item id='nav-link' style={{color:'white',  cursor:'pointer'}}>Documentation</Nav.Item></Link>
-      <motion.a  whileHover={{
+      <motion.a id='button-header' whileHover={{
         scale: 1.2,
         transition: { duration: 1 },
       }} target="_blank" href="https://quantumspot.typeform.com/to/HMDJAtmM">
