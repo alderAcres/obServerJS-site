@@ -536,7 +536,7 @@ justify-self: center;
   align-items: center;
 }
 
-.download {
+#download {
   margin: 20vh 0;
   display: flex;
   justify-content: center;

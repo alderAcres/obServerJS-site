@@ -2,7 +2,7 @@ import React, { Component, useState, useEffect, useCallback } from 'react'
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { Button } from 'react-bootstrap';
-
+import { Link } from '../routes';
 const Intro = () => {
 
   const names = ['Tweeting', 'Studying', 'Napping', 'Slacking', 'Tindering', 'Chatting', 'Coding', 'Snacking']
@@ -37,10 +37,7 @@ const Intro = () => {
   
       <h2 id='p-intro' style={{fontSize:'1.9vw', letterSpacing: '.04rem'}}>obServerJS saves developers time by providing transparent express routing and a smoother debugging process.</h2>
       <div style={{display:'flex', justifyContent:'center', alignItems:'center', marginTop:'2vh'}}>
-      <motion.a  whileHover={{
-        scale: 1.2,
-        transition: { duration: 1 },
-      }} target="_blank" href='https://observerjs-mac-build.s3.amazonaws.com/obServerJS-0.1.0.pkg'><Button id='button-mobile' className='btn-md' variant='dark' >Download</Button></motion.a>
+      <Link target="_blank" route={'/#download'}><Button id='button-mobile' className='btn-md' variant='dark' >Download</Button></Link>
       </div>
       <motion.div initial='hidden' animate='visible' variants={{
         hidden: {
