@@ -19,7 +19,7 @@ const Feature = () => {
           <motion.a  whileHover={{
             scale: 1.2,
             transition: { duration: 1 },
-          }} target="_blank" href='https://github.com/oslabs-beta/obServerJS'><Button id='button-mobile' className='btn-md' variant='dark' >Download</Button></motion.a>
+          }} target="_blank" href='https://observerjs-mac-build.s3.amazonaws.com/obServerJS-0.1.0.pkg'><Button id='button-mobile' className='btn-md' variant='dark' >Download</Button></motion.a>
         </div> 
         <div className='feature-box' style={{marginTop:'8vh'}}>
           <Image src={'/dash1.png'} alt='dashboard' width='680vw' height='440vh'/>
@@ -34,7 +34,7 @@ const Feature = () => {
           <motion.a  whileHover={{
             scale: 1.2,
             transition: { duration: 1 },
-          }} target="_blank" href='https://github.com/oslabs-beta/obServerJS'><Button id='button-mobile' className='btn-md' variant='dark' >Try It Out</Button></motion.a>
+          }} target="_blank" href='https://observerjs-mac-build.s3.amazonaws.com/obServerJS-0.1.0.pkg'><Button id='button-mobile' className='btn-md' variant='dark' >Try It Out</Button></motion.a>
       
         </div>
         <div className='feature-box5' style={{marginTop:'8vh'}}>
