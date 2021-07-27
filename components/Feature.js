@@ -9,7 +9,7 @@ const Feature = () => {
     <h1 className='headers' id='feature-header' style={{marginBottom:'10vh', textAlign:'center'}}>Features</h1>
     <div className='feature-container'>
     <div className='feature-box1'>
-        <Image src={'/dash3.png'} width='680vw' height='440vh'/>
+        <Image src={'/dashboard3.png'} width='680vw' height='440vh'/>
           </div>
           <div className='feature-box2'>
           <h3 className= 'desc-h2' id='left-header' style={{fontSize:'2.4vw', marginBottom:'2vh'}}>Simplify Backend Routing Architecture</h3>
